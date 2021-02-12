@@ -1,0 +1,27 @@
+#include "ResourceIds.hpp"
+
+'STR#' ID_ADDON_INFO "Add-on Name and Description" {
+/* [  1] */		"Photoshop-like Plans Teszt AddOn"
+/* [  2] */		"Teszt Addon a Fillekre"
+/* [  3] */		"Talalt Fillek Szama: %d"
+}
+
+'STR#' ID_ADDON_MENU "Strings for the Menu" {
+/* [  1] */		"Fillek tesztelese... ^E3 ^ES ^EE ^EI ^ED ^ET ^10001"
+}
+
+'GDLG' ID_ADDON_DLG Modal | grow   40   40  645  528  "Photshop Like Plans : FillInfo AddOn" {
+/* [  1] */ Button				  545   495   90   23	LargePlain  "OK"
+/* [  2] */ Button				  445   495   90   23	LargePlain  "Cancel"
+/* [  3] */ Separator			   10   483  625    2
+/* [  4] */ SingleSelList		   10	 10  625   475	LargePlain  PartialItems  VScroll  21  HasHeader  18 /* Switch to ListBox view, small Icons */
+/* [  5] */ LeftText			   10	495  200   23	LargePlain  vCenter  "Talalt Fillek szama"
+}
+
+'DLGH' ID_ADDON_DLG DLG_Example {
+1	""		Button_0
+2	""		Button_1
+3	""		Separator_0
+4	""		SingleSelList_0
+5	""		LeftText_0
+}
