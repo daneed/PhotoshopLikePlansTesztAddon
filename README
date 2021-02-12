@@ -2,7 +2,7 @@
 
 1. csinálj egy foldert, legyen a neve TesztAddon, és bele egy Sources Foldert.
 2. szedd le ebbe az összes fájlt. gittel egyszerű: git clone https://github.com/daneed/PhotoshopLikePlansTesztAddon
-3. ezután, a Sources Folder-beli CMakeLists.txt másold be a TesztAddon Folder alá
+3. ezután, a Sources/AddOn Folder-beli CMakeLists.txt másold be a TesztAddon Folder alá
 4. a TesztAddon folder alá csinálj egy Build foldert.
 5. Ha AC25 alatt akarod használni: keresd meg a builded MOdules_VS142_64.fin-jében az APIDevKit path-t. nálam ez c:\dev\Aquila\Bin.Win\Modules_VS142_64.fin\APIDevKit\.
 6. menjd a Build folderbe, és itt add ki ezt a parancsot: cmake -A "x64" -DAC_API_DEVKIT_DIR=<Az APIDevKit Path-od> ..
