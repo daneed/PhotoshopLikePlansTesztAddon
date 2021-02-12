@@ -2,4 +2,14 @@
 
 1. csinálj egy foldert, legyen a neve TesztAddon, és bele egy Sources Foldert.
 2. szedd le ebbe az összes fájlt. gittel egyszerű: git clone https://github.com/daneed/PhotoshopLikePlansTesztAddon
-3. 
+3. ezután, a Sources Folder-beli CMakeLists.txt másold be a TesztAddon Folder alá
+4. a TesztAddon folder alá csinálj egy Build foldert.
+5. Ha AC25 alatt akarod használni: keresd meg a builded MOdules_VS142_64.fin-jében az APIDevKit path-t. nálam ez c:\dev\Aquila\Bin.Win\Modules_VS142_64.fin\APIDevKit\.
+6. menjd a Build folderbe, és itt add ki ezt a parancsot: cmake -A "x64" -DAC_API_DEVKIT_DIR=<Az APIDevKit Path-od> ..
+	Például: cmake -A "x64" -DAC_API_DEVKIT_DIR="c:\dev\Aquila\Bin.Win\Modules_VS142_64.fin\APIDevKit" ..
+
+Ekkor létre jön Visual Studio Solution a Build folderben. Nyisd meg, majd fordíts. Ha mindent jól csináltál, a Build/Debug folderben létrejön az APX, ami kell
+
+7. AC25-öt indíts, és az AddOn Managerben add hozzá az addont, az APX-et. Ha mindent jól csináltál, akkor sikeres.
+
+8. Lesz egy parancs ekkor AC-ben, Options/Fillek tesztelése. Rakj le egy fillt, jelöld ki, és add ki a parancsot. Eredmény egy dialog, mely egy listboxot tartalmaz.
