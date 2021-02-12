@@ -1,0 +1,5 @@
+﻿Fordítás:
+
+1. csinálj egy foldert, legyen a neve TesztAddon, és bele egy Sources Foldert.
+2. szedd le ebbe az összes fájlt. gittel egyszerű: git clone https://github.com/daneed/PhotoshopLikePlansTesztAddon
+3. 
