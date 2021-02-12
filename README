@@ -7,6 +7,7 @@
 5. Ha AC25 alatt akarod használni: keresd meg a builded MOdules_VS142_64.fin-jében az APIDevKit path-t. nálam ez c:\dev\Aquila\Bin.Win\Modules_VS142_64.fin\APIDevKit\.
 6. menjd a Build folderbe, és itt add ki ezt a parancsot: cmake -A "x64" -DAC_API_DEVKIT_DIR=<Az APIDevKit Path-od> ..
 	Például: cmake -A "x64" -DAC_API_DEVKIT_DIR="c:\dev\Aquila\Bin.Win\Modules_VS142_64.fin\APIDevKit" ..
+Ha nincs CMake a gépeden, telepítsd fel innen: https://cmake.org/download/
 
 Ekkor létre jön Visual Studio Solution a Build folderben. Nyisd meg, majd fordíts. Ha mindent jól csináltál, a Build/Debug folderben létrejön az APX, ami kell
 
