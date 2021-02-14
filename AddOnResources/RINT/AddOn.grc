@@ -7,7 +7,7 @@
 }
 
 'STR#' ID_ADDON_MENU "Strings for the Menu" {
-/* [  1] */		"Fillek tesztelese... ^E3 ^ES ^EE ^EI ^ED ^ET ^10001"
+/* [  1] */		"Fillek tesztelese... ^E3 ^ES ^EE ^EI ^ED ^ET ^EW ^10001"
 }
 
 'GDLG' ID_ADDON_DLG Modal | grow   40   40  645  528  "Photshop Like Plans : FillInfo AddOn" {
